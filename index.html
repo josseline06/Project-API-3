@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="appCine">
+	<head >
+		<meta charset="utf-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Cines Separados</title>
+		
+		<!-- ESTILOS 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+		-->
+		<script src="app/components/jquery.min.js"></script>
+		<script src="app/components/angular.min.js"></script>
+		<script src="app/components/angular-route.min.js"></script>
+		<!-- CONFIG -->
+		<script src="app/app.js"></script>
+		<script src="app/app.config.js"></script>
+		
+		
+		<!--CONTROLERS-->
+		<script src="app/home/home.module.js"></script>
+		<script src="app/home/home.controller.js"></script>
+		
+		<script src="app/portafolio/portafolio.module.js"></script>
+		<script src="app/portafolio/portafolio.controller.js"></script>
+		
+		<script src="app/about/about.module.js"></script>
+		<script src="app/about/about.controller.js"></script>
+		
+		<script src="app/contacto/contacto.module.js"></script>
+		<script src="app/contacto/contacto.controller.js"></script>
+		
+		<base href="/">
+	</head>
+	<body>
+		<!--HEADER-->
+		<header ng-include="'app/header/header.html'"></header>
+		
+		<!--VISTA QUE CAMBIA-->
+		<div class="container-fluid" ng-view></div>
+		
+		<!--FOOTER-->
+		<footer ng-include="'app/footer/footer.html'"></footer>
+	</body>		
+</html>
