@@ -1,47 +1,28 @@
-<!DOCTYPE html>
-<html lang="es" ng-app="appCine">
-	<head >
-		<meta charset="utf-8">
-		
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title>Cines Separados</title>
-		
-		<!-- ESTILOS 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-		-->
-		<script src="app/components/jquery.min.js"></script>
-		<script src="app/components/angular.min.js"></script>
-		<script src="app/components/angular-route.min.js"></script>
-		<!-- CONFIG -->
-		<script src="app/app.js"></script>
-		<script src="app/app.config.js"></script>
-		
-		
-		<!--CONTROLERS-->
-		<script src="app/home/home.module.js"></script>
-		<script src="app/home/home.controller.js"></script>
-		
-		<script src="app/portafolio/portafolio.module.js"></script>
-		<script src="app/portafolio/portafolio.controller.js"></script>
-		
-		<script src="app/about/about.module.js"></script>
-		<script src="app/about/about.controller.js"></script>
-		
-		<script src="app/contacto/contacto.module.js"></script>
-		<script src="app/contacto/contacto.controller.js"></script>
-		
-		<base href="/">
-	</head>
-	<body>
-		<!--HEADER-->
-		<header ng-include="'app/header/header.html'"></header>
-		
-		<!--VISTA QUE CAMBIA-->
-		<div class="container-fluid" ng-view></div>
-		
-		<!--FOOTER-->
-		<footer ng-include="'app/footer/footer.html'"></footer>
-	</body>		
+<!doctype html>
+<html ng-app="tutorialWebApp">
+    <head>
+        <title>Cines Separados</title>
+        <!-- Vendor: Bootstrap Stylesheets http://getbootstrap.com -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Our Website CSS Styles -->
+        <link rel="stylesheet" href="app/css/main.css">
+    </head>
+    <body>
+        <!-- Our Website Content Goes Here -->
+        <div ng-include="'app/templates/header.html'"></div>
+        <div ng-view></div>
+        <div ng-include="'app/templates/footer.html'"></div>
+
+        <!-- Vendor: Javascripts -->
+        <script src="app/js/angular.min.js"></script>
+        <script src="app/js/angular-route.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        <!-- Our Website Javascripts -->
+        <script src="app/js/main.js"></script>
+    </body>
 </html>
